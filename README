@@ -1,0 +1,1 @@
+Páginas web estáticas.
