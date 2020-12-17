@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    margin: 1rem .5rem;
+    padding: 0 .5rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav {
+    align-self: center;
+    max-width: 210px;
+    padding: .5rem;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.swatch-board {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+}
+
+.swatch {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #d3d7cf;
+}
+
+.swatch-title {
+    padding: 1.25rem;
+    border-bottom: 1px solid #d3d7cf;
+}
+
+.swatch-title h3 {
+    margin: 0;
+}
+
+.swatch-body {
+    padding: 1.25rem;
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        flex-flow: row nowrap;
+    }
+    
+    .nav-wrapper {
+        min-width: 210px;
+        align-self: auto;
+    }
+
+    .nav-inner-wrapper {
+        position: sticky;
+    }
+
+    main {
+        margin-left: 1rem;
+    }
+}
