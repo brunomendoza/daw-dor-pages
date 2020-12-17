@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -67,13 +66,45 @@ nav ul {
 }
 
 .bg-secondary-color {
-    background-color: #2e3436;
     color: #fff;
+    background-color: #2e3436;
 }
 
 .bg-font-color {
     background-color: #d3d7cf;
     color: #000;
+}
+
+.primary-color {
+    color: #ce5c00;
+}
+
+.secondary-color {
+    color: #2e3436;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1, .h1 {
+    font-size: 2.5rem;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+}
+
+h3, .h3 {
+    font-size: 1.75rem;
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
 }
 
 @media (min-width: 800px) {
