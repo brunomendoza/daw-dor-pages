@@ -38,6 +38,7 @@ nav ul {
 }
 
 .swatch {
+    min-width: 180px;
     display: flex;
     flex-flow: column nowrap;
     align-content: stretch;
@@ -57,6 +58,22 @@ nav ul {
 
 .swatch-body {
     padding: 1.25rem;
+    min-height: 120px;
+}
+
+.bg-primary-color {
+    background-color: #ce5c00;
+    color: #fff;
+}
+
+.bg-secondary-color {
+    background-color: #2e3436;
+    color: #fff;
+}
+
+.bg-font-color {
+    background-color: #d3d7cf;
+    color: #000;
 }
 
 @media (min-width: 800px) {
@@ -71,8 +88,9 @@ nav ul {
 
     .nav-inner-wrapper {
         position: sticky;
+        top: 1.5rem;
     }
-
+    
     main {
         margin-left: 1rem;
     }
