@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.page {
+  padding: 1.25rem 2rem 0 2rem;
+}
+
+header {
+  margin-bottom: 1.25rem;
+}
+header .logo {
+  margin-bottom: 1.25rem;
+}
+
+nav.navbar ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+nav.navbar ul li {
+  flex: 1;
+}
+nav.navbar a {
+  display: flex;
+  padding: 0.75rem 0.25rem;
+  text-decoration: none;
+  text-align: center;
+  color: darkslategrey;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav.navbar a:hover {
+  color: slategray;
+}
+nav.navbar a:active {
+  color: red;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 480px;
+  margin-bottom: 2rem;
+}
+.banner .banner-picture {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.banner .banner-picture img {
+  width: 100%;
+  display: block;
+}
+.banner .banner-text {
+  padding: 1rem;
+}
+.banner h2 {
+  margin-bottom: 0.75rem;
+}
+.banner h3 {
+  margin-bottom: 0.75rem;
+}
+
+.display-1 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.display-2 {
+  font-size: 1.75rem;
+  line-height: 1.15;
+  font-weight: 900;
+  color: #3c3c3c;
+}
+
+main {
+  margin-bottom: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.featured-content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+div.card {
+  flex: 1;
+  margin-bottom: 1.25rem;
+  background-color: #f3f3f3;
+}
+div.card img {
+  width: 100%;
+}
+div.card .card-body {
+  padding: 1rem;
+}
+div.card .card-body > p {
+  margin-bottom: 1.25rem;
+}
+div.card .card-title h2 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1;
+  text-align: left;
+}
+div.card .actions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+div.card .actions p {
+  padding: 0 1.25rem;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+.super-main-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 960px;
+  padding: 0.5em;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+
+@media screen and (min-width: 640px) {
+  .main-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .main-wrapper header {
+    flex: 1;
+  }
+
+  .main-wrapper main {
+    flex: 3;
+  }
+}
+@media screen and (min-width: 800px) {
+  .page {
+    margin-top: 6rem;
+  }
+}

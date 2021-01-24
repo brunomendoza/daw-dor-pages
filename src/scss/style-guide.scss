@@ -1,0 +1,97 @@
+@use 'font';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    margin: 1rem .5rem;
+    padding: 0 .5rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav {
+    align-self: center;
+    max-width: 210px;
+    padding: .5rem;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.swatch-board {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+}
+
+.swatch {
+    min-width: 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #d3d7cf;
+}
+
+.swatch-title {
+    padding: 1.25rem;
+    border-bottom: 1px solid #d3d7cf;
+}
+
+.swatch-title h3 {
+    margin: 0;
+}
+
+.swatch-body {
+    padding: 1.25rem;
+    min-height: 120px;
+}
+
+.bg-primary-color {
+    background-color: #ce5c00;
+    color: #fff;
+}
+
+.bg-secondary-color {
+    background-color: #2e3436;
+    color: #fff;
+}
+
+.bg-font-color {
+    background-color: #d3d7cf;
+    color: #000;
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        flex-flow: row nowrap;
+    }
+    
+    .nav-wrapper {
+        min-width: 210px;
+        align-self: auto;
+    }
+
+    .nav-inner-wrapper {
+        position: sticky;
+        top: 1.5rem;
+    }
+    
+    main {
+        margin-left: 1rem;
+    }
+}
