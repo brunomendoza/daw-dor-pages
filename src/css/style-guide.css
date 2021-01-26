@@ -98,22 +98,25 @@ nav.navbar ul > li a {
   padding: 1.25rem;
   text-align: center;
   text-decoration: none;
-  color: #2e3436;
+  color: #23001E;
+}
+nav.navbar ul > li a:hover {
+  color: #FFBA49;
 }
 
 h1 {
   font-size: 1.75rem;
-  color: #2e3436;
+  color: #23001E;
 }
 
 h2 {
+  color: #EF5B5B;
   font-size: 1.5rem;
-  color: #ce5c00;
 }
 
 h3 {
   font-size: 1rem;
-  color: #ce5c00;
+  color: #EF5B5B;
 }
 
 p {
@@ -139,12 +142,12 @@ p {
   align-content: stretch;
   margin-bottom: 1rem;
   margin-right: 1rem;
-  border: 1px solid #d3d7cf;
+  border: 1px solid #A4A9AD;
 }
 .swatch .swatch-title {
   margin: 0;
   padding: 1.25rem;
-  border-bottom: 1px solid #d3d7cf;
+  border-bottom: 1px solid #A4A9AD;
 }
 .swatch .swatch-body {
   padding: 1.25rem;
@@ -156,17 +159,17 @@ p {
 }
 
 .bg-primary-color {
-  background-color: #ce5c00;
+  background-color: #23001E;
   color: #fff;
 }
 
 .bg-secondary-color {
-  background-color: #2e3436;
+  background-color: #EF5B5B;
   color: #fff;
 }
 
-.bg-font-color {
-  background-color: #d3d7cf;
+.bg-terciary-color {
+  background-color: #FFBA49;
   color: #000;
 }
 
@@ -189,3 +192,5 @@ p {
     margin-left: 1rem;
   }
 }
+
+/*# sourceMappingURL=style-guide.css.map */

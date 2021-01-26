@@ -49,6 +49,10 @@ nav.navbar {
                 text-align: center;
                 text-decoration: none;
                 color: variables.$primary-color;
+
+                &:hover {
+                    color: variables.$terciary-color;
+                }
             }
         }
     }
@@ -62,8 +66,8 @@ h1 {
 
 h2 {
     @extend %title;
-    font-size: 1.50rem;
     color: variables.$secondary-color;
+    font-size: 1.50rem;
 }
 
 h3 {
@@ -96,12 +100,12 @@ p {
     align-content: stretch;
     margin-bottom: 1rem;
     margin-right: 1rem;
-    border: 1px solid #d3d7cf;
+    border: 1px solid variables.$border-color;
 
     .swatch-title {
         margin: 0;
         padding: 1.25rem;
-        border-bottom: 1px solid #d3d7cf;
+        border-bottom: 1px solid variables.$border-color;
     }
 
     .swatch-body {
@@ -119,17 +123,17 @@ p {
 
 
 .bg-primary-color {
-    background-color: #ce5c00;
+    background-color: variables.$primary-color;
     color: #fff;
 }
 
 .bg-secondary-color {
-    background-color: #2e3436;
+    background-color: variables.$secondary-color;
     color: #fff;
 }
 
-.bg-font-color {
-    background-color: #d3d7cf;
+.bg-terciary-color {
+    background-color: variables.$terciary-color;
     color: #000;
 }
 
