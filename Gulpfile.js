@@ -48,12 +48,13 @@ function htmlMinify() {
 }
 
 function index() {
-    var target = src('./src/**.html');
-    var sources = src(['./js/**/*.js', './css/**/*.css'], { read: false });
+    var target = src('./src/index.html');
+    var sources = src(['./src/js/**/*.js', './src/css/**/*.css'], { read: false });
 
     return target.pipe(inject(sources))
         .pipe(dest('./src'));
 }
+
 
 exports.sass = function() {
     watch('./src/scss/**/*.scss', cssSass);
