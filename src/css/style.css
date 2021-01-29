@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -68,6 +68,9 @@ header {
   margin-bottom: 1.25rem;
 }
 header .logo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   margin-bottom: 1.25rem;
 }
 
@@ -82,16 +85,16 @@ nav.navbar ul li {
 }
 nav.navbar a {
   display: flex;
-  padding: 0.75rem 0.25rem;
-  text-decoration: none;
-  text-align: center;
-  color: #23001E;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  padding: 0.75rem 0.25rem;
+  text-decoration: none;
+  text-align: center;
+  color: #2E5077;
 }
 nav.navbar a:hover {
-  color: slategray;
+  color: #611C35;
 }
 nav.navbar a:active {
   color: red;
@@ -109,7 +112,9 @@ nav.navbar a:active {
   z-index: -1;
 }
 .banner .banner-picture img {
-  width: 100%;
+  position: relative;
+  top: 0;
+  right: 420px;
   display: block;
 }
 .banner .banner-text {
@@ -117,21 +122,23 @@ nav.navbar a:active {
 }
 .banner h2 {
   margin-bottom: 0.75rem;
+  color: #2E5077;
 }
 .banner h3 {
   margin-bottom: 0.75rem;
+  color: #FFA630;
 }
 
 .display-1 {
   font-size: 2.5rem;
   line-height: 1.15;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .display-2 {
   font-size: 1.75rem;
   line-height: 1.15;
-  font-weight: 900;
+  font-weight: bold;
   color: #3c3c3c;
 }
 
@@ -140,7 +147,7 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
+  font-weight: bold;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -149,13 +156,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-.featured-content {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 div.card {
-  flex: 1;
   margin-bottom: 1.25rem;
   background-color: #f3f3f3;
 }
@@ -189,16 +190,45 @@ footer {
   margin-bottom: 2rem;
 }
 
-.super-main-wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  max-width: 960px;
-  padding: 0.5em;
-}
+@media screen and (min-width: 480px) {
+  header {
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-template-areas: "logo menu";
+  }
+  header .logo {
+    align-items: flex-start;
+    grid-area: logo;
+  }
+  header .navbar {
+    grid-area: menu;
+  }
 
-.main-wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
+  nav.navbar ul {
+    justify-content: flex-end;
+  }
+  nav.navbar ul li {
+    padding-left: 1.875rem;
+    flex: initial;
+  }
+
+  .banner {
+    height: 450px;
+  }
+  .banner .banner-picture img {
+    position: relative;
+    top: -120px;
+    right: 120px;
+  }
+
+  .featured-content-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-content-inner > .card-wrapper {
+    flex: 1 1 180px;
+    padding: 0 1rem 1rem 1rem;
+  }
 }
