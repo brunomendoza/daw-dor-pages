@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker run \
+    --rm \
+    -it \
+    -p 8888:80 \
+    -v "$PWD/src":/usr/share/nginx/html \
+    -d \
+    --name daw-dor-static_pages \
+    nginx:stable
