@@ -157,6 +157,35 @@ footer {
     margin-bottom: 2rem;
 }
 
+article {
+    .article-heading {
+        position: relative;
+
+        & > h1 {
+            margin: 1.5rem 0 1.25rem;
+            font-size: 24 / 14 * 1rem;
+            line-height: 1.15;
+            color: variables.$primary-color;
+        }
+        & > img {
+            width: 100%;
+        }
+    }
+
+    .article-content {
+        h2 {
+            margin: 1rem 0 .75rem;
+            font-size: 20 / 14 * 1rem;
+            line-height: 1.15;    
+            color: variables.$secondary-color;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
 @media screen and (min-width: variables.$breakpoint-md) {
     header {
         display: grid;
@@ -221,6 +250,19 @@ footer {
                 position: relative;
                 top: -120px;
                 right: 0;
+            }
+        }
+    }
+
+    article {
+        margin-bottom: 4rem;
+
+        .article-heading {
+            position: relative;
+    
+            & > h1 {
+                font-size: 36 / 14 * 1rem;
+                line-height: 1.15;
             }
         }
     }

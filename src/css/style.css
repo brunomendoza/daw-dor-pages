@@ -190,6 +190,28 @@ footer {
   margin-bottom: 2rem;
 }
 
+article .article-heading {
+  position: relative;
+}
+article .article-heading > h1 {
+  margin: 1.5rem 0 1.25rem;
+  font-size: 1.7142857143rem;
+  line-height: 1.15;
+  color: #2E5077;
+}
+article .article-heading > img {
+  width: 100%;
+}
+article .article-content h2 {
+  margin: 1rem 0 0.75rem;
+  font-size: 1.4285714286rem;
+  line-height: 1.15;
+  color: #FFA630;
+}
+article .article-content p {
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (min-width: 480px) {
   header {
     display: grid;
@@ -245,5 +267,16 @@ footer {
     position: relative;
     top: -120px;
     right: 0;
+  }
+
+  article {
+    margin-bottom: 4rem;
+  }
+  article .article-heading {
+    position: relative;
+  }
+  article .article-heading > h1 {
+    font-size: 2.5714285714rem;
+    line-height: 1.15;
   }
 }
