@@ -1,4 +1,4 @@
-const { src, dest, series, parallel, watch } = require('gulp');
+const { src, dest, series, parallel, watch, on } = require('gulp');
 const sass = require('gulp-sass');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
@@ -10,7 +10,7 @@ sass.compiler = require('sass');
 
 function cssSass() {
     return src('./src/scss/**/*.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
         .pipe(dest('./src/css/'));
 }
 
