@@ -54,12 +54,12 @@ table {
   border-spacing: 0;
 }
 
-p, h3, h2, h1 {
+p, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0.75rem;
   margin-bottom: 1.25rem;
 }
 
-h3, h2, h1 {
+h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 700;
   line-height: 1.15;
 }
@@ -104,19 +104,19 @@ nav.navbar ul > li a:hover {
   color: #611C35;
 }
 
-h1 {
+h1, .h1 {
   font-size: 1.75rem;
   color: #2E5077;
 }
 
-h2 {
+h2, .h2 {
   color: #FFA630;
   font-size: 1.5rem;
 }
 
-h3 {
+h3, .h3 {
   font-size: 1rem;
-  color: #FFA630;
+  color: black;
 }
 
 p {

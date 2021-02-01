@@ -143,7 +143,7 @@ nav.navbar a:active {
 }
 
 main {
-  margin-bottom: 1.25rem;
+  margin-bottom: 4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -152,8 +152,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
+h1 {
+  font-size: 2rem;
+  color: #2E5077;
+}
+
 h2 {
   font-size: 1.5rem;
+  color: #FFA630;
 }
 
 div.card {
@@ -188,6 +194,52 @@ div.card .actions p {
 
 footer {
   margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.15;
+  color: #2E5077;
+}
+.form-group input {
+  box-sizing: border-box;
+  padding: 0.25rem;
+  border: 1px solid #FFA630;
+  line-height: 1.5;
+}
+.form-group input[type=text], .form-group input[type=email] {
+  width: 100%;
+}
+.form-group input[type=submit] {
+  padding: 0.25rem 4rem;
+  background-color: #FFA630;
+}
+.form-group textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid #FFA630;
+}
+.form-group select {
+  width: 50%;
+  padding: 0.25rem;
+  border: 1px solid #FFA630;
+  line-height: 1.15;
+}
+
+.checkbox-group-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox-group-wrapper .checkbox-group {
+  flex: 1 1 33%;
 }
 
 article .article-heading {
@@ -252,6 +304,11 @@ article .article-content p {
   .featured-content-inner > .card-wrapper {
     flex: 1 1 180px;
     padding: 0 1rem 1rem 1rem;
+  }
+
+  .inner-main {
+    max-width: 690px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 800px) {

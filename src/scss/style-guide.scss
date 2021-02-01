@@ -58,22 +58,22 @@ nav.navbar {
     }
 }
 
-h1 {
+h1, .h1 {
     @extend %title;
     font-size: 1.75rem;
     color: variables.$primary-color;
 }
 
-h2 {
+h2, .h2 {
     @extend %title;
     color: variables.$secondary-color;
     font-size: 1.50rem;
 }
 
-h3 {
+h3, .h3 {
     @extend %title;
     font-size: 1rem;
-    color: variables.$secondary-color;
+    color: black;
 }
 
 p {

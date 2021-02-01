@@ -10,7 +10,7 @@ sass.compiler = require('sass');
 
 function cssSass() {
     return src('./src/scss/**/*.scss')
-        .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(dest('./src/css/'));
 }
 
