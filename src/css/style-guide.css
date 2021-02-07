@@ -158,6 +158,11 @@ p {
   display: block;
 }
 
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+
 .bg-primary-color {
   background-color: #2E5077;
   color: #fff;
@@ -175,6 +180,8 @@ p {
 
 @media (min-width: 800px) {
   .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
     flex-flow: row nowrap;
   }
 
